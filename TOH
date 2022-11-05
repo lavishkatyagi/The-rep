@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+
+void TOH(int n,char s,char m,char d)
+{
+
+if(n==1)
+printf("\n%c-->%c",s,d);
+else
+{
+TOH(n-1,s,d,m);
+printf("\n%c-->%c",s,d);
+TOH(n-1,m,s,d);}
+}
+int main()
+{
+TOH(3,'s','m','d');
+return 0;
+}
