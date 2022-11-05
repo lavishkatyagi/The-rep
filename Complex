@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+ struct num
+{ int real;
+int img;
+};
+int main()
+{
+   struct num n1={7,5};
+struct num n2={2,5};
+ struct num n;
+ n.real=(n1.real+n2.real);
+n.img=(n1.img+n2.img);
+printf("the sum is\n");
+printf("%d\t",n.real);
+ printf("%d\n",n.img);
+
+n.real=(n1.real-n2.real);
+n.img=(n1.img-n2.img);
+printf("the diff is\n");
+printf("%d\t",n.real);
+ printf("%d\n",n.img);
+
+n.real=(n1.real*n2.real);
+n.img=(n1.img*n2.img);
+printf("the prod is\n");
+printf("%d\t",n.real);
+ printf("%d\t",n.img);
+ 
+
+return 0;}
+
+    
